@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐Digital Tourist Guidner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8fb;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 Digital Tourist Guider</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#places">Places</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover Heritage with a Scan 📱</h2>
+    <h3>Founder/CEO : Jay Gadwal</h3>
+    <p>Scan QR codes at tourist spots and explore history, audio guides, and videos instantly.</p>
+    <button onclick="alert('QR scanning feature coming soon!')">📷 Scan QR</button>
+  </section>
+
+  <div class="container">
+    <h2 id="places">Featured Tourist Places</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./tajmahal.jpeg" alt="Taj Mahal">
+        <h3>Taj Mahal</h3>
+        <p>The symbol of love in Agra. Explore its history and beauty.</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./khajurao.jpeg" alt="Khajuraho Temple">
+        <h3>Khajuraho Temples</h3>
+        <p>UNESCO heritage site famous for intricate art and sculptures.</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src= "./sanchi.jpeg"alt="Sanchi Stupa">
+        <h3>Sanchi Stupa</h3>
+        <p>One of the oldest stone structures in India, symbol of Buddhism.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>© 2025 Digital Tourist Guidner | Contact: info@digitaltouristguidner.co</p>
+  </footer>
+</body>
+</html>
